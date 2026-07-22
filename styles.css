@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F7F4EC;
+}
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: #F7F4EC;
+    align-items: center;
+    
+}
+#login{
+    background-color: #C05B3E;
+    color: #F7F4EC;
+    font-size: 14.5px;
+    font-family: sans-serif;
+    width: 69px;
+    height: 35px;
+    border-radius: 10px;
+    opacity: 1.00;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 4.5px;
+    padding-right: 4.5px;
+    text-align: center;
+    border-color: none;
+    border-style: none;
+    margin: 10px;
+    margin-left: 30px;
+}
+#signup{
+    background-color: #F7F4EC;
+    color:#3E4A2E;
+    font-size: 14.5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 69px;
+    height: 35px;
+    border-radius: 10px;
+    opacity: 1.00;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 4.5px;
+    padding-right: 4.5px;
+    text-align: center;
+    border-color: none;
+    border-style: none;
+    margin: 10px;
+}
+#mun{
+    position: relative;
+    background: none;
+    color: #3E4A2E;
+    opacity: 1.0;
+    border-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16.5px;
+    margin-left: auto;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+       
+}
+#hero_nav{
+    position: relative;
+    background: none;
+    color: #3E4A2E;
+    opacity: 1.0;
+    border-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16.5px;
+    margin-left: 10px;
+    margin-right: 10px;    
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+}
+#nav_title{
+    font-family: serif;
+    align-self: auto;
+    margin: 15px;
+
+}
+#nav-bar .btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color:#C05B3E;
+    transition: width 0.3s ease-in-out;
+}
+
+#nav-bar .btn:hover {
+    color: #C05B3E;
+}
+#nav-bar .btn:hover::after{
+    width: 100%;
+}
+#login:hover{
+    transform:translateY(-5px);
+    transition: 0.5s ease-in-out; 
+}
+#signup:hover{
+    transform:translateY(-5px);
+    transition: 0.5s ease-in-out; 
+}
+hr{
+    border-style: solid;
+    border-width: 2px;
+    opacity: 1.0;
+    border-color:rgb(222, 218, 211) ;
+}
+/*  nav bar styling ends here 
+    and the hero --> title styling starts here 
+*/ 
+#hero{
+    background-color: #F7F4EC;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#hero-title{
+    margin: auto;
+    margin-right: 25px;
+    margin-top: 25px;
+    font-family: sans-serif;
+    font-size: 26px;
+    color: #3E4A2E;
+
+}
+#hero-par{
+    margin: auto;
+    margin-right: 25px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #3E4A2E;
+    opacity: 1.0;
+}
+/*
+--> the hero header ends here, now to the cards grid 
+*/
+#cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap:20px;
+    margin: 30px;
+
+}
+#card{
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color:rgb(222, 218, 211);
+  border-width: 4px;
+  border-radius: 15px;
+}
+.img-container{
+  position: relative;
+  display: inline-block; 
+  height: 260px;
+  border-radius: 15px;   
+  overflow: hidden;
+  border-radius: 11px 11px 0 0;
+  
+}
+.img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 11px 11px 0 0;
+}
+/*
+to match the inner element's radius with the outter element's radius
+i used the following equation: 
+   Inner Radius = Outer Radius - Border Width
+ //    image         card         of the card
+   --> 15 - 4 = 11 
+
+*/
+.date-tag{
+  position: absolute;
+  top: 15px;             
+  right: 15px;          
+  background-color: #DCA73A; 
+  color: #3E4A2E;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 10;
+}
+#ar-title{
+    margin: auto;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 20px; 
+    font-family: Impact, fantasy ;
+    font-size: 14.5;
+    
+    
+}
+#eng-title{
+    margin: auto;
+    margin-top: 15px;
+    margin-right: 20px;
+    font-family: Impact, fantasy;
+    font-size: 14.5;
+    opacity: 1;
+}
+#card-par{
+    margin: auto;
+    margin-top: 15px;
+    margin-right: 20px;
+    font-family: FreeMono, monospace;
+    font-size: 14.5;
+    opacity: 1;
+}
+#card-bottom-tag{
+    margin: auto;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-family: FreeMono, monospace;
+}
