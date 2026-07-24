@@ -1,6 +1,10 @@
 *{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+@font-face {
+    font-family: IBM;
+    src: url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap);
+}
 body{
     margin: 0;
     padding: 0;
@@ -24,7 +28,7 @@ body{
     background-color: #C05B3E;
     color: #F7F4EC;
     font-size: 14.5px;
-    font-family: sans-serif;
+    font-family: IBM;
     width: 69px;
     height: 35px;
     border-radius: 10px;
@@ -44,7 +48,7 @@ body{
     color:#3E4A2E;
     font-size: 14.5px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family:IBM;
     width: 69px;
     height: 35px;
     border-radius: 10px;
@@ -65,7 +69,7 @@ body{
     opacity: 1.0;
     border-style: none;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: IBM;
     font-size: 16.5px;
     margin-left: auto;
     margin-right: 10px;
@@ -82,7 +86,7 @@ body{
     opacity: 1.0;
     border-style: none;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: IBM;
     font-size: 16.5px;
     margin-left: 10px;
     margin-right: 10px;    
@@ -92,9 +96,22 @@ body{
     padding-right: 0;
 }
 #nav_title{
-    font-family: serif;
-    align-self: auto;
-    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    font-family: IBM;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+#nav_title1{
+    font-family: IBM;
+    margin: 0;
+    
+}
+#mini{
+    color: #C05B3E;
+    font-size: 10px;
+    font-family: IBM;
+    margin-left: 5px;
 
 }
 #nav-bar .btn::after{
@@ -146,7 +163,7 @@ hr{
     margin: auto;
     margin-right: 25px;
     margin-top: 25px;
-    font-family: sans-serif;
+    font-family: IBM;
     font-size: 26px;
     color: #3E4A2E;
 
@@ -155,7 +172,7 @@ hr{
     margin: auto;
     margin-right: 25px;
     margin-top: 20px;
-    font-family: sans-serif;
+    font-family: IBM;
     font-size: 16px;
     color: #3E4A2E;
     opacity: 1.0;
@@ -210,7 +227,7 @@ i used the following equation:
   color: #3E4A2E;
   padding: 8px 16px;
   border-radius: 20px;
-  font-family: sans-serif;
+  font-family: IBM;
   font-size: 14px;
   font-weight: bold;
   z-index: 0.5;
@@ -220,7 +237,7 @@ i used the following equation:
     text-align: right;
     margin-top: 15px;
     margin-right: 20px; 
-    font-family: Impact, fantasy ;
+    font-family:IBM;
     font-size: 14.5;
     
     
@@ -229,7 +246,7 @@ i used the following equation:
     margin: auto;
     margin-top: 15px;
     margin-right: 20px;
-    font-family: Impact, fantasy;
+    font-family: IBM;
     font-size: 14.5;
     opacity: 1;
 }
@@ -237,7 +254,7 @@ i used the following equation:
     margin: auto;
     margin-top: 15px;
     margin-right: 20px;
-    font-family: FreeMono, monospace;
+    font-family: IBM;
     font-size: 14.5;
     opacity: 1;
 }
@@ -246,7 +263,7 @@ i used the following equation:
     margin-top: 15px;
     margin-right: 20px;
     margin-bottom: 10px;
-    font-family: FreeMono, monospace;
+    font-family: IBM;
 }
 #hero-tag-container{
     display: flex;
@@ -306,6 +323,7 @@ i used the following equation:
 }
 .tag{ 
     font-size: 14px;
+    font-family: IBM;
     color: #3E4A2E;
     background-color:#c2c0c0;
     border-color: #3E4A2E;
@@ -317,6 +335,7 @@ i used the following equation:
 .tag-secondary{
     font-size: 14px;
     color: #A67B24;
+    font-family: IBM;
     display: inline-block;
     width: 55px;
     text-align: center;
