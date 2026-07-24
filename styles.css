@@ -465,3 +465,88 @@ i used the following equation:
     font-weight: bold;
 }
 
+
+@media screen and (max-width: 1024px) {
+    #grid-container {
+        column-count: 3;
+    }
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Grid Adjustments */
+    #grid-container {
+        column-count: 2;
+        margin: 20px; 
+        column-gap: 15px;
+    }
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 20px;
+    }
+    #hero-title { font-size: 22px; }
+    #hero-par { font-size: 14px; }
+
+   
+    #mun, #hero_nav { 
+        font-size: 14.5px; 
+    }
+    #login { 
+        margin-left: 15px;
+    }
+    #nav_title1 { 
+        font-size: 18px; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Grid Adjustments */
+    #grid-container {
+        column-count: 1;
+        margin: 15px;
+    }
+    #cards {
+        grid-template-columns: 1fr;
+        margin: 15px;
+    }
+    .audio-card { padding: 16px; }
+    .avatar-wrapper { width: 45px; height: 45px; }
+    .audio-title { font-size: 14px; }
+    .play-button { width: 35px; height: 35px; }
+    .play-icon { width: 14px; height: 14px; }
+    .waveform { gap: 2px; }
+    .timestamp { font-size: 12px; }
+
+    
+    #nav-bar {
+        height: auto;            
+        flex-wrap: wrap;        
+        justify-content: center; 
+        padding: 15px 5px;
+        gap: 10px;            
+        position:static;
+        
+    }
+
+    #mun {
+        margin-left: 10px;       
+    }
+
+    #login, #signup {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    #nav_title {
+        align-items: center;     
+        margin-right: 0;
+        width: 100%;             
+    }
+
+    #hero, #feed {
+        margin-top: 130px; 
+    }
+}
