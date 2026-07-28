@@ -563,7 +563,7 @@ i used the following equation:
   background-color: #dfa94b; 
   color: #1c1917; 
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 10px 100px / 120px;
 }
 
 .custom-card-title {
@@ -588,6 +588,7 @@ i used the following equation:
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-left: 15px;    
 }
 
 .custom-donate-btn:hover {
