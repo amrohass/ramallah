@@ -240,9 +240,9 @@ i used the following equation:
     text-align: right;
     margin-top: 15px;
     margin-right: 20px; 
-    font-family:IBM;
-    font-size: 14.5;
-    
+    opacity: 0.7;
+    font-size: 1.17em;
+    font-weight: bold;
     
 }
 #eng-title{
@@ -251,22 +251,23 @@ i used the following equation:
     margin-right: 20px;
     font-family: IBM;
     font-size: 14.5;
-    opacity: 1;
+    opacity: 0.7;
 }
 #card-par{
     margin: auto;
     margin-top: 15px;
     margin-right: 20px;
     font-family: IBM;
-    font-size: 14.5;
-    opacity: 1;
+    font-size: 12.5;
+    opacity: 0.5;
 }
 #card-bottom-tag{
     margin: auto;
     margin-top: 15px;
     margin-right: 20px;
     margin-bottom: 10px;
-    font-family: IBM;
+    opacity: 0.5;
+
 }
 #hero-tag-container{
     display: flex;
