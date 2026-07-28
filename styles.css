@@ -334,6 +334,13 @@ i used the following equation:
 .card-footer{
     margin: 10px;
 }
+.media-overlay{
+    font-size: 14.5px;
+    font-family: IBM;
+    opacity: 0.7;
+    margin: 10px;
+    
+}
 .card-body{
     margin: 10px;
 }
